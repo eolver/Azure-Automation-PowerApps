@@ -1,17 +1,23 @@
 # Azure-Automation and PowerApps
 
 ## Overview
-Learn step by step understanding on how to script and automate scaling of resources in Azure in a simple yet powerful fashion to help save you money in the cloud using multiple Microsoft tools. Azure Automation runbooks to code your Azure PowerShell scripts, MS Flow as your orchestration tool and MS PowerApps as your friendly, simple UI
+Step by Step guide to understand how to script and automate scaling of resources in Azure in a simple yet powerful fashion to help save you money in the cloud using multiple Microsoft tools. Azure Automation runbooks to code your Azure PowerShell scripts, MS Flow as your orchestration tool and MS PowerApps as your friendly, simple UI
 
-![Automation](http://www.etsolutionsau.com/images/automation.jpg)
+As part of my organisation adopting SAFe recently and wanting to have a more 'scale on demand' approach, I produced this demo to share at a tech conference and wanted to share witht he broader community.
+
+![Automation](http://www.etsolutionsau.com/images/github/automation.jpg)
 
 
 ## Deploy your Resources
 For this demo I will deploy Azure App Service Plans, Azure SQL Databases and Virtual machines to demonstrate how scaling and automation can save money
 
+
+
 ## Create and update your Automation Account
 
 Creating an Automation account is simple, browse to 'create a resource' and follow standard steps subscription, resource group name and location.  When create be sure to create the 'Azure run As account' as this is crucial for authenticating with Azure to manage Azure resources.
+
+![Deploy](http://www.etsolutionsau.com/images/github/createrunbook.jpg)
 
 Once you have created the resource, the first thing I would suggest doing is installing the required modules for this particular demo which includes
 -AzureRM.Resources
@@ -30,6 +36,8 @@ For this demo I have attached the PowerShell scripts for each resource type to t
 -Scale Down ASP
 -Stop VM
 
+![runbooks](http://www.etsolutionsau.com/images/github/runbooks.jpg)
+
 This is extremly powerful where for every new resouce added, the powerscript will get all resources of that type and execute so make sure resource groups are segregated as required for each environment
 
 ## Demonstrate how to schedule runbooks 
@@ -40,11 +48,21 @@ All your runbooks can be scheduled and automated to run for desired length of ti
 
 Once you have created you runbooks, tested and published them you can then login to MS Flow to create and link your PowerApp Flow button to your automation runbook in Azure
 
-Create new Flow 
+![Create Flow](http://www.etsolutionsau.com/images/github/createflow.jpg)
+![Configure Flow](http://www.etsolutionsau.com/images/github/configureflow.jpg)
+![Flow](http://www.etsolutionsau.com/images/github/flow.jpg)
+
+Check that when you trigger or run that flow button it triggers in azure under the automation account > Jobs blade
+
+![Automation Jobs](http://www.etsolutionsau.com/images/github/jobsrun.jpg)
 
 ## Create your PowerApp and link to your Flow button
 
-Once you have created your PowerApp flow buttons login to MS PowerApps with a work/school account. This should give you the option to create a blank canvas for Mobile or tablet. you can then begin to customise the PowerApp with text labels, colour and buttons which you can then link to your Flow Buttons. 
+Once you have created your PowerApp flow buttons login to MS PowerApps with a work/school account. This should give you the option to create a blank canvas for Mobile or tablet. you can then begin to customise the PowerApp with text labels, colour and buttons which you can then link to your Flow Buttons as below
 
+![Create PowerApp](http://www.etsolutionsau.com/images/github/createpowerapp.jpg)
+![Link Flow Action](http://www.etsolutionsau.com/images/github/linkactionflow.jpg)
 
+![Demo App](http://www.etsolutionsau.com/images/github/powerappcopy.jpg)
+![Demo App](http://www.etsolutionsau.com/images/github/powerapp2copy.jpg)
 
