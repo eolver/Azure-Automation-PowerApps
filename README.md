@@ -19,22 +19,22 @@ Creating an Automation account is simple, browse to 'create a resource' and foll
 
 ![Deploy](http://www.etsolutionsau.com/images/github/createrunbook.jpg)
 
-Once you have created the resource, the first thing I would suggest doing is installing the required modules for this particular demo which includes
--AzureRM.Resources
--AzureRM.Profile
+Once you have created the resource, the first thing I would suggest doing is installing the required modules for this particular demo which includes  
+-AzureRM.Resources  
+-AzureRM.Profile  
 
 ## Create your Azure PowerShell Runbooks
 
-Create the runbooks by going to the Runbooks blade, name your runbook appropriately for this demo I have created 6 runbooks one for each resources and its purpose.
-
+Create the runbooks by going to the Runbooks blade, name your runbook appropriately for this demo I have created 6 runbooks one for each resources and its purpose.  
+  
 For this demo I have attached the PowerShell scripts for each resource type to the repo.
-
--Scale Up SQL
--Scale Up ASP
--Start VM
--Scale Down SQL
--Scale Down ASP
--Stop VM
+  
+-Scale Up SQL  
+-Scale Up ASP  
+-Start VM  
+-Scale Down SQL  
+-Scale Down ASP  
+-Stop VM  
 
 ![runbooks](http://www.etsolutionsau.com/images/github/runbooks.jpg)
 
