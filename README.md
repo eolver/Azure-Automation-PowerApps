@@ -22,12 +22,15 @@ Once you have created the resource, the first thing I would suggest doing is ins
 Create the runbooks by going to the Runbooks blade, name your runbook appropriately for this demo I have created 6 runbooks one for each resources and its purpose.
 
 For this demo I have attached the PowerShell scripts for each resource type to the repo.
+
 -Scale Up SQL
 -Scale Up ASP
 -Start VM
 -Scale Down SQL
 -Scale Down ASP
 -Stop VM
+
+This is extremly powerful where for every new resouce added, the powerscript will get all resources of that type and execute so make sure resource groups are segregated as required for each environment
 
 ## Demonstrate how to schedule runbooks 
 
